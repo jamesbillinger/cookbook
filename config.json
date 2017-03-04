@@ -1,0 +1,11 @@
+{
+  "port": "3000",
+  "proxyPort": "3001",
+  "firebase": {
+    "apiKey": "AIzaSyBI6GSbNFVSboqWdM3SISs21hGa9Gor14A",
+    "authDomain": "cookbook-6cd32.firebaseapp.com",
+    "databaseURL": "https://cookbook-6cd32.firebaseio.com",
+    "storageBucket": "cookbook-6cd32.appspot.com",
+    "messagingSenderId": "399101062897"
+  }
+}

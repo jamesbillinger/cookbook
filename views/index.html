@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon"
+        type="image/x-icon"
+        href="/favicon.ico">
+</head>
+<body>
+<div id="root" style="height:100%;"></div>
+<script>
+  (function() {
+    var NODE_ENV = <%- JSON.stringify(NODE_ENV) %>;
+    if (NODE_ENV === 'development') {
+      console.log('NODE_ENV', NODE_ENV);
+    }
+    const script = document.createElement('script');
+    console.log(location.origin);
+    script.src = (NODE_ENV === 'development') ?
+        (location.origin.replace('3000','3001') + '/dist/app.js') :
+        '/dist/app.js';
+    document.write(script.outerHTML);
+  }());
+</script>
+</body>
+</html>

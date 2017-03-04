@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["module-alias", [
+      { "src": "./app", "expose": "app" },
+      { "src": "./public", "expose": "public" }
+    ]]
+  ]
+}
