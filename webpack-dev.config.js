@@ -8,7 +8,7 @@ var os = require('os');
 var include = [
   path.resolve(__dirname, 'config.json'),
   path.resolve(__dirname, 'app'),
-  path.resolve(__dirname, 'public/images')
+  path.resolve(__dirname, 'public')
 ];
 var config = require('./config.json');
 
@@ -80,8 +80,8 @@ module.exports = {
           ]
         }
       },
-      /*{test: /\.css?$/, loaders: ['style-loader', 'raw'], include: __dirname},
-      {test: /\.less$/,loader: 'style-loader!css-loader!less-loader', include: include},
+      {test: /\.css?$/, loaders: ['style-loader', 'raw-loader'], include: include},
+      /*{test: /\.less$/,loader: 'style-loader!css-loader!less-loader', include: include},
       {test: /\.eot/, loader: 'file-loader', include: include},
       {test: /\.svg/, loader: 'file-loader', include: include},
       {test: /\.gif$/, loader: "url-loader?mimetype=image/png", include: include},
